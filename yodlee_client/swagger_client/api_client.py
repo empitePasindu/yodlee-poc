@@ -21,7 +21,7 @@ import tempfile
 
 # python 2 and python 3 compatibility library
 import six
-from six.moves.urllib.parse import quote
+from urllib.parse import quote
 
 from swagger_client.configuration import Configuration
 import swagger_client.models

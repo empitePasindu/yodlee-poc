@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: swagger-client
+Version: 1.0.0
+Summary: Yodlee Core APIs
+Home-page: 
+Author-email: developer@yodlee.com
+License: UNKNOWN
+Keywords: Swagger,Yodlee Core APIs
+Platform: UNKNOWN
+
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available &lt;a href&#x3D;\&quot;https://developer.yodlee.com/java-sdk-overview \&quot;&gt;here&lt;/a&gt;. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to &lt;a href&#x3D;\&quot;https://developer.yodlee.com/docs/api/1.1/Overview\&quot;&gt;Yodlee API v1.1 - Overview&lt;/a&gt;.&lt;br&gt;&lt;br&gt;You will have to set the header before making the API call. The following headers apply to all the APIs:&lt;ul&gt;&lt;li&gt;Authorization: This header holds the access token&lt;/li&gt; &lt;li&gt; Api-Version: 1.1&lt;/li&gt;&lt;/ul&gt;&lt;b&gt;Note&lt;/b&gt;: If there are any API-specific headers, they are mentioned explicitly in the respective API&#39;s description.  # noqa: E501
+    
+

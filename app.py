@@ -3,7 +3,6 @@ from flask import Flask,request,make_response,jsonify
 from helpers.mdc_logging import get_mdc_logger,set_mdc_trace_id
 from config.config import Config
 
-
 config = Config('config.yaml')
 
 
@@ -14,7 +13,6 @@ log = get_mdc_logger(__name__)
 def get_token():    
     set_mdc_trace_id()
     
-
     return make_response('', 200)
 
 
