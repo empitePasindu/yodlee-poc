@@ -6,6 +6,7 @@ class YodleeConfig:
     def __init__(self,config_dict,callback_url) -> None:
         self.CLIENT_ID =  config_dict['CLIENT_ID']
         self.CLIENT_SECRET =  config_dict['CLIENT_SECRET']
+        self.URL = config_dict['URL']
         self.CALLBACK_URL = callback_url
 
 class DbConfig:
@@ -40,7 +41,7 @@ class Config:
             config['db']['USERNAME']= os.environ['DB_USERNAME']
             config['db']['PASSWORD']= os.environ['DB_PASSWORD']
         
-        self.ms =  YodleeConfig(config['yodlee'])
+        self.yodlee =  YodleeConfig(config['yodlee'],self.PUBLIC_URL)
         self.db = DbConfig(config['db'])
             
         init_logging(timezone=self.timezone,log_level=config['log']['LOG_LEVEL'],log_rotate=config['log']['LOG_ROTATE'],file_name=config['log']['LOG_FILE_PATH'])

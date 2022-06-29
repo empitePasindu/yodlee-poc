@@ -7,8 +7,6 @@ TIME_ZONE: Asia/Colombo
 ENV_MODE: DEV
 # ENABLE > disable db interactions ,DISABLE > enable db interactions
 #env(optional)
-STANDALONE_MODE: DISABLE
-#Max no of threads to use for async processing of the API requests
 MAX_THREADS: 10
 #env(optional)
 PUBLIC_URL: https://notification-web-app-1.azurewebsites.net
@@ -20,21 +18,6 @@ log:
   LOG_ROTATE: midnight
   #created format > notifier.2022-04-29_14-36.log
   LOG_FILE_PATH: logs/notifier.log
-
-teams:
-  subscription:
-    #time (minutes) to keep subscription alive from graph API side  (has to be less than 60)
-    ALIVE_TIME: 58
-    #refresh interval (minutes) for the scheduler to create / update ALIVE_TIME for subscription
-    REFRESH_INTERVAL: 50
-
-  message:
-    #how many reminders to send till a reply is given
-    REMINDER_COUNT: 3
-    #the interval to send the reminders in minutes
-    REMINDER_INTERVAL: 1
-      #the interval to run the schedule for triggering reminders in minutes
-    REMINDER_SCHEDULE_INTERVAL: 0.25
 
 db:
   #env
@@ -51,37 +34,8 @@ db:
   #env #must be 16, 24 or 32 bytes long (respectively for *AES-128*, *AES-192* or *AES-256*)
   ENCRYPTION_KEY: "z$C&F)H@McQfTjWn"
 
-ms:
-  AZURE_APP_CLIENT_ID: cebbb6d9-0a6b-47d7-8cee-7ddf55c6f086
-  #env
-  AZURE_APP_SECRET: IGS8Q~~t~4FSnzO1odMM~k~YjC3zHv9bNn6zRaeX
-  TENANT_DOMAIN: 17jdpq.onmicrosoft.com
-  TENANT_ID: bc364a82-65a9-45c8-8de2-678188e48e65
-  TEAMS_GROUP_ID: 1a785cb9-484e-4ca2-9275-7ba411807dcf
-  CHANNEL_ID: 19:b82b310006d14d97a4624f0a3d44f628@thread.tacv2
-  TOKEN_FILE_NAME: o365_token.txt
-  AUTH_SCOPES:
-    [
-      "ChannelMessage.Send",
-      "Schedule.Read.All",
-      "User.Read.All",
-      "offline_access",
-      "ChannelMessage.Read.All",
-      "Channel.ReadBasic.All",
-    ]
+yodlee:
 
-twillio:
-  #env
-  SID: ACe387c2e82275d7a69f1d887ffd4a944e
-  #env
-  AUTH_TOKEN: 47cb607580cfe43c6f86eb3b6b5eb337
-  # purchased telephone number for twillio account
-  TP_NUMBER: +94711858255
-  #max call duration in seconds
-  CALL_DURATION: 30
-  #time to keep ringing till answered in seconds (max:600s)
-  RING_DURATION: 30
-  # alice,woman ,man
-  VOICE: "alice"
-  # en-AU ,en-US
-  LANGUAGE: "en-AU"
+  CLIENT_ID: mvARj21uCPC3aob1LhTNsFVEOPVXC9yz
+  CLIENT_SECRET: JwJaVYZiiVkgelln
+  URL: https://development.api.yodlee.com.au/ysl
