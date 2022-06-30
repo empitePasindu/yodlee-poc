@@ -1,24 +1,25 @@
+from datetime import datetime
 from sqlalchemy import create_engine
-from sqlalchemy.orm import scoped_session, sessionmaker, load_only
+from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from datetime import datetime, timedelta
+from .models import User
 
 Base = declarative_base()
-from .models import *
 
 engine = None
 db_session = None
 
-def init(host, username, password, db_name, encyption_key, recreate_tables=False):
+
+def init(host, username, password, db_name, recreate_tables=False):
     """Creates the db connection and the tables if does not exist
     :param host > host address including port 
     :param username
     :param password
     """
-    global engine, db_session
-    set_key(encyption_key)
+    global engine 
+    global db_session
     engine = create_engine(
-        f'mysql+pymysql://{username}:{password}@{host}/{db_name}',echo = False)
+        f'mysql+pymysql://{username}:{password}@{host}/{db_name}', echo=False)
     db_session = scoped_session(sessionmaker(autocommit=False,
                                              autoflush=False,
                                              bind=engine))
@@ -43,7 +44,20 @@ def commit_session():
 # -------------------notification_request-------------------------
 
 
-def save_notification_request(voice_message=None, teams_message=None, teams_verification=False,voice_verification=False, severity=None, on_shift_analyst=None, requested_time=datetime.now()):
+def get_user(cubis_profile_id)->User:
+
+     return  db_session.query(User)\
+            .filter(User.cubis_user_id == cubis_profile_id)\
+            .first()
+
+
+def add_user(cubis_profile_id):
+    user = User(cubis_user_id=cubis_profile_id)
+    db_session.add(user)
+    db_session.commit()
+
+
+def save_notification_request(voice_message=None, teams_message=None, teams_verification=False, voice_verification=False, severity=None, on_shift_analyst=None, requested_time=datetime.now()):
     # req = NoitificationRequest(voice_message=voice_message,
     #                            teams_message=teams_message,
     #                            teams_verification=teams_verification,

@@ -1,6 +1,8 @@
 import requests
 from rest_client import session
+from helpers.mdc_logging import get_mdc_logger
 
+log = get_mdc_logger(__name__)
 
 
 base_url = 'https://development.api.yodlee.com.au/ysl'
@@ -18,6 +20,7 @@ def set_configs(url,clientId,clientSecret):
     
 
 def get_access_token(userId):
+    log.info("get_access_token BEGIN userId={}",userId)
     response = session.post(
         url = base_url + '/auth/token' ,
         headers={'Content-Type': 'application/x-www-form-urlencoded',
@@ -32,9 +35,9 @@ def get_access_token(userId):
     )
     json = response.json()
     
-    
+    log.info("get_access_token END response={}",json)
     return json['token']['accessToken']
 
 
 
-get_access_token('test-cx-1')
+# get_access_token('test-cx-1')

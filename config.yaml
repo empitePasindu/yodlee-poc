@@ -1,4 +1,4 @@
-SERVER_PORT: 5005
+SERVER_PORT: 5010
 
 TIME_ZONE: Asia/Colombo
 
@@ -21,21 +21,22 @@ log:
 
 db:
   #env
-  HOST: mysql-notification-server.mysql.database.azure.com
+  HOST: localhost
   #env
-  PORT: 3306
+  PORT: 5006
   #env
-  USERNAME: empite_dev
+  USERNAME: root
   #env
-  PASSWORD: PWX5N7Yypq2Tt8u
-  DB_NAME: notification_db
+  PASSWORD: password
+  DB_NAME: yodlee_db  
   #True : drop and recreate all tables else False
   RECREATE_TABLES: False
-  #env #must be 16, 24 or 32 bytes long (respectively for *AES-128*, *AES-192* or *AES-256*)
-  ENCRYPTION_KEY: "z$C&F)H@McQfTjWn"
+
 
 yodlee:
 
   CLIENT_ID: mvARj21uCPC3aob1LhTNsFVEOPVXC9yz
   CLIENT_SECRET: JwJaVYZiiVkgelln
   URL: https://development.api.yodlee.com.au/ysl
+  FASTLINK_URL: https://fl4.preprod.yodlee.com.au/authenticate/ANZDevexPreProd-19/fastlink?channelAppName=anzdevexpreprod
+  CONFIG_NAME: cubis_prod_agg_verif

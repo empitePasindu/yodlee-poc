@@ -1,0 +1,36 @@
+2022-06-30 12:12:49,989 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 12:13:13,085 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 12:13:13] "GET /fastlink/get-token HTTP/1.1" 200 -
+2022-06-30 12:13:14,081 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 12:13:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-06-30 12:13:34,958 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 12:13:38,896 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 12:13:38] "GET /fastlink/get-token HTTP/1.1" 200 -
+2022-06-30 12:18:51,468 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 12:18:51] "[33mPOST /webhook/account-update HTTP/1.1[0m" 404 -
+2022-06-30 12:18:51,554 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 12:18:51] "[33mPOST /webhook/balance-update HTTP/1.1[0m" 404 -
+2022-06-30 12:25:35,868 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 12:25:49,540 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 12:25:49] "POST /webhook/account-update HTTP/1.1" 200 -
+2022-06-30 12:25:50,629 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 12:25:50] "POST /webhook/balance-update HTTP/1.1" 200 -
+2022-06-30 16:01:08,539 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:01:08,539 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:06:03,793 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:06:03] "[35m[1mGET /fastlink/test-cx-1 HTTP/1.1[0m" 500 -
+2022-06-30 16:06:03,793 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:06:03] "[35m[1mGET /fastlink/test-cx-1 HTTP/1.1[0m" 500 -
+2022-06-30 16:09:07,227 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:09:07,227 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:09:10,551 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:09:10] "[35m[1mGET /fastlink/test-cx-1 HTTP/1.1[0m" 500 -
+2022-06-30 16:09:10,551 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:09:10] "[35m[1mGET /fastlink/test-cx-1 HTTP/1.1[0m" 500 -
+2022-06-30 16:10:02,020 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:10:02,020 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:10:05,195 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:10:05] "[35m[1mGET /fastlink/test-cx-1 HTTP/1.1[0m" 500 -
+2022-06-30 16:10:05,195 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:10:05] "[35m[1mGET /fastlink/test-cx-1 HTTP/1.1[0m" 500 -
+2022-06-30 16:10:33,157 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:10:33,157 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:10:37,420 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:10:37] "[35m[1mGET /fastlink/test-cx-1 HTTP/1.1[0m" 500 -
+2022-06-30 16:10:37,420 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:10:37] "[35m[1mGET /fastlink/test-cx-1 HTTP/1.1[0m" 500 -
+2022-06-30 16:11:49,148 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:11:49,148 - werkzeug INFO - [None] :  * Running on http://127.0.0.1:5010 (Press CTRL+C to quit)
+2022-06-30 16:11:57,238 - yodlee_client INFO - [20220630161156067] : get_access_token END response={}
+2022-06-30 16:11:57,238 - yodlee_client INFO - [20220630161156067] : get_access_token END response={}
+2022-06-30 16:11:57,451 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:11:57] "GET /fastlink/test-cx-1 HTTP/1.1" 200 -
+2022-06-30 16:11:57,451 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:11:57] "GET /fastlink/test-cx-1 HTTP/1.1" 200 -
+2022-06-30 16:12:09,348 - yodlee_client INFO - [20220630161208850] : get_access_token END response={}
+2022-06-30 16:12:09,348 - yodlee_client INFO - [20220630161208850] : get_access_token END response={}
+2022-06-30 16:12:09,501 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:12:09] "GET /fastlink/test-cx-1 HTTP/1.1" 200 -
+2022-06-30 16:12:09,501 - werkzeug INFO - [None] : 127.0.0.1 - - [30/Jun/2022 16:12:09] "GET /fastlink/test-cx-1 HTTP/1.1" 200 -

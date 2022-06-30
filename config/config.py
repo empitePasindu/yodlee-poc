@@ -7,6 +7,8 @@ class YodleeConfig:
         self.CLIENT_ID =  config_dict['CLIENT_ID']
         self.CLIENT_SECRET =  config_dict['CLIENT_SECRET']
         self.URL = config_dict['URL']
+        self.FASTLINK_URL = config_dict['FASTLINK_URL']
+        self.CONFIG_NAME = config_dict['CONFIG_NAME']
         self.CALLBACK_URL = callback_url
 
 class DbConfig:
